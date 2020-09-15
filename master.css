@@ -1,0 +1,23 @@
+@font-face {
+    font-family: astroSpace;
+    src: url("assets/fonts/astrospace.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#masterCanvas {
+    display:block;
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>PlanetPaper</title>
+
+        <link rel="stylesheet" href="master.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <!-- this is used in some scripts -->
+
+        <!-- babylon crap -->
+        <script src="https://cdn.babylonjs.com/babylon.js"></script>
+        <script src="https://cdn.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
+        <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+        <script src="https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js"></script>
+        <script src="https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js"></script>
+        <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
+        <script src="https://cdn.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js"></script>
+        <script src="https://cdn.babylonjs.com/serializers/babylonjs.serializers.min.js"></script>
+    </head>
+    <body>
+        <p id="debug"></p>
+        <canvas id="mainCanvas"></canvas>
+
+        <script src="scripts/app.js"></script>
+        <script src="scripts/renderer.js"></script>
+        <script src="scripts/configParser.js"></script>
+
+        <script>
+            planetPaper.load();
+        </script>
+
+        <img id="logoSmall" class="hidden" width="128" height="128" src="assets/logo.png">
+    </body>
+</html>

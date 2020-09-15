@@ -1,0 +1,190 @@
+{
+    "rock": {
+        "displayName": "Mercury",
+
+        "physicalProperties": {
+            "rotates": true,
+            "rotationSpeed": 0.2,
+            "tilt": 2,
+
+            "rendering": {
+                "diffuse": "textures/mercury/mercury_diffuse.jpg",
+                "specular": "textures/SpecularBlank.png"
+            }
+        }
+    },
+    "hot": {
+        "displayName": "Venus",
+
+        "physicalProperties": {
+            "rotates": true,
+            "rotationSpeed": -0.2,
+            "tilt": 3,
+
+            "rendering": {
+                "diffuse": "textures/venus/venus_diffuse.jpg",
+                "specular": "textures/SpecularBlank.png",
+
+                "atmosphere": {
+                    "color": "#BD9D69",
+                    "opacity": 0.2,
+
+                    "clouds": {
+                        "layers": [
+                            {
+                                "map": "textures/venus/venus_cloudlayer_1.png",
+                                "opacity": 0.1,
+                                "rotationSpeed": -0.3
+                            },
+                            {
+                                "map": "textures/venus/venus_cloudlayer_2.png",
+                                "opacity": 0.1,
+                                "rotationSpeed": -0.3
+                            },
+                            {
+                                "map": "textures/venus/venus_cloudlayer_3.png",
+                                "opacity": 0.1,
+                                "rotationSpeed": -0.4
+                            },
+                            {
+                                "map": "textures/venus/venus_cloudlayer_4.png",
+                                "opacity": 0.1,
+                                "rotationSpeed": -0.5
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "dirt": {
+        "displayName": "Earth",
+
+        "physicalProperties": {
+            "rotates": true,
+            "rotationSpeed": 0.45,
+            "tilt": 23.5,
+
+            "rendering": {
+                "diffuse": "textures/earth/earth_diffuse.jpg",
+                "normals": "textures/earth/earth_normal.jpg",
+                "specular": "textures/earth/earth_specular.jpg",
+
+                "atmosphere": {
+                    "color": "#65799D",
+                    "opacity": 0.35,
+
+                    "clouds": {
+                        "layers": [
+                            {
+                                "map": "textures/earth/earth_clouds.png",
+                                "opacity": 0.6,
+                                "rotationSpeed": 0.6
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "redboi": {
+        "displayName": "Mars",
+
+        "physicalProperties": {
+            "rotates": true,
+            "rotationSpeed": 0.49,
+            "tilt": 25.1,
+
+            "rendering": {
+                "diffuse": "textures/mars/mars_diffuse.jpg",
+                "normals": "textures/mars/mars_normal.jpg",
+                "specular": "textures/mars/mars_specc.jpg",
+
+                "atmosphere": {
+                    "color": "#DF521E",
+                    "opacity": 0.5
+                }
+            }
+        }
+    },
+    "bigboi": {
+        "displayName": "Jupiter",
+
+        "physicalProperties": {
+            "rotates": true,
+            "rotationSpeed": 0.75,
+            "tilt": 3,
+
+            "rendering": {
+                "diffuse": "textures/jupiter/jupiter_diffuse.jpg",
+                "specular": "textures/SpecularBlank.png",
+
+                "atmosphere": {
+                    "color": "#8F6336",
+                    "opacity": 0.5
+                }
+            }
+        }
+    },
+    "ringyboi": {
+        "displayName": "Saturn",
+
+        "physicalProperties": {
+            "rotates": true,
+            "rotationSpeed": 0.6,
+            "tilt": 27,
+
+            "rendering": {
+                "diffuse": "textures/saturn/saturn_diffuse.jpg",
+                "specular": "textures/SpecularBlank.png",
+
+                "atmosphere": {
+                    "color": "#C9BD79",
+                    "opacity": 0.3
+                },
+                "ring": {
+                    "map": "textures/saturn/saturn_rings.png",
+                    "opacity": 0.8
+                }
+            }
+        }
+    },
+    "youranus": {
+        "displayName": "Uranus",
+
+        "physicalProperties": {
+            "rotates": true,
+            "rotationSpeed": 0.54,
+            "tilt": 97.77,
+
+            "rendering": {
+                "diffuse": "textures/uranus/uranus_diffuse.jpg",
+                "specular": "textures/SpecularBlank.png",
+
+                "atmosphere": {
+                    "color": "#8CC3C4",
+                    "opacity": 0.4
+                }
+            }
+        }
+    },
+    "nepnep": {
+        "displayName": "Neptune",
+
+        "physicalProperties": {
+            "rotates": true,
+            "rotationSpeed": 0.4,
+            "tilt": 28.5,
+
+            "rendering": {
+                "diffuse": "textures/neptune/neptune_diffuse.jpg",
+                "specular": "textures/SpecularBlank.png",
+
+                "atmosphere": {
+                    "color": "#295181",
+                    "opacity": 0.3
+                }
+            }
+        }
+    }
+}

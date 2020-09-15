@@ -1,0 +1,110 @@
+{
+    "file": "index.html",
+    "general": {
+        "properties": {
+            "showPos": {
+                "order": 0,
+                "text": "Show Postion Values for Settings Input",
+                "type": "bool",
+                "value": false
+            },
+            "cameraAlpha": {
+                "order": 1,
+                "max": 3.14159265359,
+                "min": 0,
+                "text": "Horizontal Rotation",
+                "type": "slider",
+                "value": 2.491,
+                "editable": true
+            },
+            "cameraBeta": {
+                "order": 2,
+                "max": 3.14159265359,
+                "min": 0,
+                "text": "Vertical Rotation",
+                "type": "slider",
+                "value": 1.335,
+                "editable": true
+            },
+
+            "enablePlanet": {
+                "order": 100,
+                "text": "Enable/Disable rendering of a Planet.",
+                "type": "bool",
+                "value": true
+            },
+            "planet": {
+                "order": 110,
+                "condition": "enablePlanet.value == true",
+
+                "text": "Planet to render.",
+                "type": "combo",
+                "value": "dirt",
+                "options": [
+                    {
+                        "label": "Mercury",
+                        "value": "rock",
+                    },
+                    {
+                        "label": "Venus",
+                        "value": "hot",
+                    },
+                    {
+                        "label": "Earth",
+                        "value": "dirt",
+                    },
+                    {
+                        "label": "Mars",
+                        "value": "redboi",
+                    },
+                    {
+                        "label": "Jupiter",
+                        "value": "bigboi",
+                    },
+                    {
+                        "label": "Saturn",
+                        "value": "ringyboi",
+                    },
+                    {
+                        "label": "Uranus",
+                        "value": "youranus",
+                    },
+                    {
+                        "label": "Neptune",
+                        "value": "nepnep",
+                    },
+                ]
+            },
+            "axialTilt": {
+                "order": 120,
+                "condition": "enablePlanet.value == true",
+                "text": "Render Axial Tilt.",
+                "type": "bool",
+                "value": true
+            },
+            "renderAtmosphere": {
+                "order": 130,
+                "condition": "enablePlanet.value == true",
+                "text": "Enable/Dislabe Rendering Atmosphere's. This also disables clouds.",
+                "type": "bool",
+                "value": true
+            },
+            "renderClouds": {
+                "order": 140,
+                "condition": "enablePlanet.value == true && renderAtmosphere.value == true",
+                "text": "Enable/Dislabe Rendering clouds.",
+                "type": "bool",
+                "value": true
+            },
+            "renderRings": {
+                "order": 150,
+                "condition": "enablePlanet.value == true",
+                "text": "Enable/Dislabe Rendering rings. This only actually applies to Saturn.",
+                "type": "bool",
+                "value": true
+            },
+        },
+    },
+    "title": "PlanetPaper",
+    "type": "web"
+}
